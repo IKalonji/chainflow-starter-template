@@ -1,3 +1,5 @@
+import { ABI } from "./abi";
+
 export const ChainFlowConfig = {
     maticKey: "Mumbai key",
     chainflowAddress: "address of deployed chainflow contract",

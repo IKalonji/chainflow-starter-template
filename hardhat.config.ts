@@ -4,7 +4,8 @@ import { ChainFlowConfig } from "./scripts/chainflow_config/chainflow.config";
 
 const config: HardhatUserConfig = {
   solidity: "0.8.18",
-  networks: {
+  defaultNetwork: "mumbai",
+  networks:{
     hardhat: {},
     mumbai: {
       chainId: 80001,

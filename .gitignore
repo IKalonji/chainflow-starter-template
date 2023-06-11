@@ -1,6 +1,6 @@
 #chainflow config
 chainflow.config.ts
-
+flow.json
 # Logs
 logs
 *.log
@@ -142,4 +142,3 @@ typechain-types
 # Hardhat files
 cache
 artifacts
-

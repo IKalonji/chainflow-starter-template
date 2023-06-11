@@ -6,13 +6,24 @@
 		"testnet": "access.devnet.nodes.onflow.org:9000"
 	},
 	"accounts": {
+		"my-testnet-account": {
+			"address": "0xc21858034c708090",
+			"key": "a6ff3a5f722a87b45bcd4be772f3373e56827b4ba05a2041e9f41ed72b303b71"
+		},
 		"emulator-account": {
 			"address": "f8d6e0586b0a20c7",
-			"key": "baf16e86d7cb693d265f7a320df7b727df1033ac77c1816d9cd66df51a773cb0"
-		},
-		"testnet-account": {
-			"address": "abc",
-			"key": "def"
+			"key": "b49800775180c3664219bf89c74946502ba46256e6a648d513e0407b6d00913d"
 		}
-	}
+	},
+	"contracts": {
+		"AutomatedCounter": "./flow/cadence/contracts/AutomatedCounter.cdc"
+	  },
+	  "deployments": {
+		"testnet": {
+		  "my-testnet-account": ["AutomatedCounter"]
+		},
+		"emulator": {
+			"emulator-account": ["AutomatedCounter"]
+		}
+	}	
 }

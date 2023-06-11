@@ -1,5 +1,6 @@
 import { ethers } from "hardhat";
 import { ChainFlowConfig } from "./chainflow_config/chainflow.config";
+import { exec } from 'child_process';
 
 async function main() {
     
