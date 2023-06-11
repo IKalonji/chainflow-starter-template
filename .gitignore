@@ -1,3 +1,6 @@
+#chainflow config
+chainflow.config.ts
+
 # Logs
 logs
 *.log
